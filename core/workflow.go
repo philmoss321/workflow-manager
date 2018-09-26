@@ -59,12 +59,13 @@ func (wf *Workflow) Run() error {
 func (wf *Workflow) run(steps []*Step) error {
 	sort.Sort(ByIndex(steps))
 	for i, s := range steps {
-		wf.logger.Print(fmt.Sprintf("workflow: Start step: %v", steps[i].name))
+		Logger.Print(fmt.Sprintf("workflow: Start step: %v", steps[i].index))
 		if err := s.Run(); err != nil {
+			Logger.Println(err)
 			wf.status = config.Errored
 			return err
 		}
-		wf.logger.Print(fmt.Sprintf("workflow: Complete step: %v", steps[i].name))
+		Logger.Print(fmt.Sprintf("workflow: Complete step: %v", steps[i].index))
 	}
 	wf.status = config.Complete
 	return nil

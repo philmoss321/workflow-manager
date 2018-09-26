@@ -6,10 +6,9 @@ import model "stash.mtvi.com/scm/ms/hls-packager-service/core/model"
 type FileDownload struct {
 	url              string
 	downloadLocation string
-	Downloader       model.Downloader
 }
 
 // Execute : Implement Task interface
-func (nd *FileDownload) Execute() {
-	nd.Downloader.Download(nd.url, nd.downloadLocation)
+func (nd *FileDownload) Execute(downloader model.Downloader) {
+	downloader.Download(nd.url, nd.downloadLocation)
 }

@@ -24,10 +24,10 @@ func CreatePremadeWorkflow(wfType PremadeWorkflow) *core.Workflow {
 			for _, task := range workflowList.Tasks {
 				if steps[task.StepIndex] == nil {
 					step = core.NewStep(task.StepIndex)
-					step.AddTask(task.Name, task.Task)
+					step.AddTask(task.Name, task.Task, task.Adapter)
 					steps[task.StepIndex] = step
 				} else {
-					steps[task.StepIndex].AddTask(task.Name, task.Task)
+					steps[task.StepIndex].AddTask(task.Name, task.Task, task.Adapter)
 				}
 			}
 		} else {

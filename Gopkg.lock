@@ -10,7 +10,6 @@
 [[projects]]
   name = "github.com/aws/aws-sdk-go"
   packages = [
-    ".",
     "aws",
     "aws/awserr",
     "aws/awsutil",
@@ -66,9 +65,27 @@
   packages = ["."]
   revision = "0b12d6b5"
 
+[[projects]]
+  name = "github.com/mattn/go-runewidth"
+  packages = ["."]
+  revision = "ce7b0b5c7b45a81508558cd1dba6bb1e4ddb51bb"
+  version = "v0.0.3"
+
+[[projects]]
+  branch = "master"
+  name = "golang.org/x/sys"
+  packages = ["unix"]
+  revision = "b09afc3d579e346c4a7e4705953acaf6f9e551bd"
+
+[[projects]]
+  name = "gopkg.in/cheggaaa/pb.v1"
+  packages = ["."]
+  revision = "2af8bbdea9e99e83b3ac400d8f6b6d1b8cbbf338"
+  version = "v1.0.25"
+
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "50f314bd85903c6ea43c29d47d470a4fd000d0ca2768732ece6c9e8d39f6965d"
+  inputs-digest = "465eca9843380a60b12074227ac2b71cf4e94a24a8c71bac95f0b516384851cb"
   solver-name = "gps-cdcl"
   solver-version = 1

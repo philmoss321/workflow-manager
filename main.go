@@ -5,6 +5,7 @@ import (
 
 	"github.com/BurntSushi/toml"
 	model "stash.mtvi.com/scm/ms/hls-packager-service/core/model"
+	factory "stash.mtvi.com/scm/ms/hls-packager-service/factory"
 )
 
 // Version : App version
@@ -18,6 +19,11 @@ func main() {
 		return
 	}
 	// Run(config)
+	workflow := factory.CreatePremadeWorkflow("PackageHLS")
+	err = workflow.Run()
+	if err != nil {
+		log.Println(err)
+	}
 	if err != nil {
 		log.Fatal("Error initializing, Packager shutting down")
 		return
