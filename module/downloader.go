@@ -4,7 +4,7 @@ import (
 	"errors"
 	"log"
 
-	model "stash.mtvi.com/scm/ms/hls-packager-service/core/model"
+	model "github.com/philmoss321/workflow-manager/core/model"
 )
 
 // DownloadAsset : task

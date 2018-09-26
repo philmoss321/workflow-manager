@@ -1,6 +1,6 @@
 package model
 
-import workflow "stash.mtvi.com/scm/ms/hls-packager-service/core"
+import workflow "github.com/philmoss321/workflow-manager/core"
 
 // Task : represents task interface of workflow.
 type Task interface {

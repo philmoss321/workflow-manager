@@ -4,8 +4,8 @@ import (
 	"log"
 
 	"github.com/BurntSushi/toml"
-	model "stash.mtvi.com/scm/ms/hls-packager-service/core/model"
-	factory "stash.mtvi.com/scm/ms/hls-packager-service/factory"
+	model "github.com/philmoss321/workflow-manager/core/model"
+	factory "github.com/philmoss321/workflow-manager/factory"
 )
 
 // Version : App version

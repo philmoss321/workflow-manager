@@ -1,9 +1,9 @@
 package factory
 
 import (
-	adapter "stash.mtvi.com/scm/ms/hls-packager-service/adapter"
-	core "stash.mtvi.com/scm/ms/hls-packager-service/core"
-	module "stash.mtvi.com/scm/ms/hls-packager-service/module"
+	adapter "github.com/philmoss321/workflow-manager/adapter"
+	core "github.com/philmoss321/workflow-manager/core"
+	module "github.com/philmoss321/workflow-manager/module"
 )
 
 // TaskList : define our task list

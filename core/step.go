@@ -5,7 +5,7 @@ import (
 	"sync"
 
 	multierror "github.com/hashicorp/go-multierror"
-	config "stash.mtvi.com/scm/ms/hls-packager-service/config"
+	config "github.com/philmoss321/workflow-manager/config"
 )
 
 // Step : represents parallel tasks on workflow.

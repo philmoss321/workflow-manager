@@ -1,7 +1,7 @@
 package factory
 
 import (
-	core "stash.mtvi.com/scm/ms/hls-packager-service/core"
+	core "github.com/philmoss321/workflow-manager/core"
 )
 
 // PremadeWorkflow : constants for premade workflow names

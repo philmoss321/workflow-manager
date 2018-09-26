@@ -1,7 +1,7 @@
 package core
 
 import (
-	config "stash.mtvi.com/scm/ms/hls-packager-service/config"
+	config "github.com/philmoss321/workflow-manager/config"
 )
 
 // Task : represents task interface of workflow.

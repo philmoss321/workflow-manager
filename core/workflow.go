@@ -7,7 +7,7 @@ import (
 	"log"
 	"os"
 
-	config "stash.mtvi.com/scm/ms/hls-packager-service/config"
+	config "github.com/philmoss321/workflow-manager/config"
 )
 
 // Workflow : contains tasks list of workflow definition.
